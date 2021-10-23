@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: aqua;
+            margin: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <div class="container center">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel praesentium molestias. Aut iste corporis exercitationem perspiciatis, libero assumenda aspernatur dolore, repudiandae velit aperiam tempora a illo quaerat temporibus placeat?</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel praesentium molestias. Aut iste corporis exercitationem perspiciatis, libero assumenda aspernatur dolore, repudiandae velit aperiam tempora a illo quaerat temporibus placeat?</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+
+    <p>baseline</p>
+    <div class="container baseline">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel praesentium molestias. Aut iste corporis exercitationem perspiciatis, libero assumenda aspernatur dolore, repudiandae velit aperiam tempora a illo quaerat temporibus placeat?</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+    <br>
+
+    <h1>column</h1>
+    <p>center</p>
+    <div class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+
+    <p>stretch</p>
+    <div class="container stretch column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectet.</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectet.</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+
+    <p>baseline</p>
+    <div class="container baseline column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel praesentium molestias. Aut iste corporis exercitationem perspiciatis, libero assumenda aspernatur dolore, repudiandae velit aperiam tempora a illo quaerat temporibus placeat?</div>
+        <div class="item">Molestias minus minima voluptates labore quis dolorem similique?</div>
+    </div>
+</body>
+</html>
