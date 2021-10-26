@@ -1,0 +1,106 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body {
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #FFF203;
+    text-decoration: none;
+}
+
+/* filme princial */
+
+.main-film {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../img/capa-solo.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-film .description {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-cards {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #FFF203;
+    border-radius: 5px;
+    transition: .3s ease all;
+}
+
+.button-cards a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-cards:hover {
+    background-color: rgba(255, 251, 0, 0.5);
+    color: black;
+    border-color: black;
+}
+
+.button-cards i {
+    margin-right: 5px;
+}
+
+.container {
+    margin: 0px 20px;
+}
+
+.main-film .container {
+    width: 70%;
+}
+
+.box-film {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.categories {
+    margin: 10px;
+}
